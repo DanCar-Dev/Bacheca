@@ -54,13 +54,12 @@
 
         function PadletBoard() {
             // Sistema Multi-Utente - MODIFICA QUI LE PASSWORD E GLI UTENTI
-            const USERS = {
-                'Daniele': { password: 'Framework', role: 'admin', name: 'Amministratore' },
-                'Antonella': { password: 'scottlove', role: 'admin', name: 'Amministratrice' },
-                //'mario': { password: 'mario456', role: 'editor', name: 'Mario Rossi' },
-                // 'laura': { password: 'laura789', role: 'editor', name: 'Laura Bianchi' },
-                //  'ospite': { password: 'ospite123', role: 'viewer', name: 'Ospite' }
+               const USERS = {
+                'daniele': { password: 'Framework', role: 'admin', name: 'Amministratore' },
+                'antonella': { password: 'scottlove', role: 'admin', name: 'Amministratrice' },
+                // ecc...
             };
+           
 
             const [notes, setNotes] = useState([]);
             const [isAdding, setIsAdding] = useState(false);
